@@ -1,0 +1,49 @@
+{
+  "name": "@araki-packages/sns-share-scripts",
+  "version": "0.1.4",
+  "description": "> TODO: description",
+  "author": "ArakiTakaki <arakitakaki.work@gmail.com>",
+  "homepage": "https://github.com/araki-packages/sns-share-scripts",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "types/index.d.ts",
+  "browser": "dist/sns-share-scripts.js",
+  "files": [
+    "dist",
+    "src",
+    "types"
+  ],
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/araki-packages/sns-share-scripts.git"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "test": "jest"
+  },
+  "bugs": {
+    "url": "https://github.com/araki-packages/sns-share-scripts/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "@rollup/plugin-typescript": "^6.1.0",
+    "lodash.camelcase": "^4.3.0",
+    "lodash.upperfirst": "^4.3.1",
+    "rollup": "^2.33.1",
+    "rollup-plugin-dts": "^1.4.13",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.0.3",
+    "typescript": "^4.0.5"
+  }
+}
